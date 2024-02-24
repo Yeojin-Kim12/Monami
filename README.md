@@ -1,7 +1,6 @@
 # 🖊️ 모나미 클론코딩
 
 ![](./image/monami-markdown.jpg)
-<img scr="./image/monami-markdown.jpg">
 
 - #### [모나미 원본](http://www.monami.com/index.php)
 - #### [모나미 클론 코딩]()
@@ -29,7 +28,7 @@
 
 ### 1. HEADER
 
-<img scr="./image/implement1.png" width="100%" height = "auto">
+![](./image/implement1.png)
 
 - 크게 두 개로 나눠 구성
 - 상단에는 언어 변경 · SNS · Sub Menu로 구성, 하단에는 로고 · GNB · LNB · 검색 · 전체 메뉴로 구성
@@ -38,20 +37,20 @@
 
 ### 2. VISUAL
 
-<img scr="./image/implement2.png" width="100%" height = "auto">
+![](./image/implement2.png)
 
 - 이미지 위에 글씨는 postion을 absolute로 줘서 배치
 
 ### 3. ARRIVALS
 
-<img scr="./image/implement3.png" width="100%" height = "auto">
+![](./image/implement3.png)
 
 - 위와 아래로 div로 나눠서 Flex를 이용해 구성
 - align-items를 flex-end와 flex-start로 줘서 배치
 
 ### 4. PRODUCT
 
-<img scr="./image/implement4.png" width="100%" height = "auto">
+![](./image/implement4.png)
 
 - 4개의 카테고리로 구성
 - Swiper를 이용해 슬라이드 시 item이 보이도록 구성
@@ -59,28 +58,28 @@
 
 ### 5. VIDEO
 
-<img scr="./image/implement5.png" width="100%" height = "auto">
+![](./image/implement5.png)
 
 - Scroll이 Video의 절반 정도 왔을 때 재생, 빠져 나갈 때 정지
 - video 태그와 ScrollMagic을 사용
 
 ### 6. NEWS
 
-<img scr="./image/implement6.png" width="100%" height = "auto">
+![](./image/implement6.png)
 
 - 3개의 영역으로 구성
 - Flex를 사용해 배치
 
 ### 7. SUBDISIARY
 
-<img scr="./image/implement7.png" width="100%" height = "auto">
+![](./image/implement7.png)
 
 - Flex를 사용해 배치
 - justify-content를 space-between으로 줘서 간격에 맞춰 정렬
 
 ### 8. FOOTER
 
-<img scr="./image/implement8.png" width="100%" height = "auto">
+![](./image/implement8.png)
 
 - 상단과 하단으로 나눠 구성
 - 하단에 있는 ComboBox는 header 섹션에 있는 언어 변경과 거의 동일
