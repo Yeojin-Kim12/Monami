@@ -1,6 +1,6 @@
 # 🖊️ 모나미 클론코딩
 
-<img scr="./image/monami-markdown.jpg" width="100%" height="150px">
+<img scr="./image/monami-markdown.jpg" width="100%">
 
 - #### [모나미 원본](http://www.monami.com/index.php)
 - #### [모나미 클론 코딩]()
