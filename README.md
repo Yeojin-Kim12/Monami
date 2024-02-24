@@ -1,45 +1,103 @@
-# 👀 자신이 원하는 사이트 레이아웃 클론
+# 🖊️ 모나미 클론코딩
 
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.  
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.   
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
+<img scr="./image/monami-markdown.jpg" width="100%" height="150px">
 
-## 과제 수행 및 제출 방법
+- #### [모나미 원본](http://www.monami.com/index.php)
+- #### [모나미 클론 코딩]()
 
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-1. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, `git branch KDT8_ParkYoungWoong`)
-1. 자신의 본명 브랜치에서 과제를 수행합니다.
-1. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(`main` 브랜치에 푸시하지 않도록 꼭 주의하세요, `git push origin KDT8_ParkYoungWoong`)
-1. 저장소에서 `main` 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, `main` <== `KDT8_ParkYoungWoong`)
+## 📌 선택 방법
 
-- `main` 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+- 저번주에 진행한 **스타벅스 예제**와 비슷한 사이트
+- swiper와 scrollmagic을 사용하는 사이트
+- 동영상을 제공하는 사이트
+- 깔끔한 사이트
 
-## 필수 요구사항
+## 💡 구현 방법
 
-- [ ] 과제에 대한 설명을 포함한 `README.md` 파일을 제공하세요!
-- [ ] 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- [ ] 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요! 
-- [ ] 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+- 총 8개의 Section으로 구성
+  - HEADER, VISUAL, ARRIVALS, PRODUCT, VIDEO, NEWS, SUBDISIARY, FOOTER
+- HTML과 CSS 위주로 구성
+  - JS는 classList 속성과 Swiper, ScrollMagic만 사용해 최소화
+- Flex, Grid 활용
+  - Grid보단 Flex를 사용하려고 노력
+  - Sub Menu, GNB, LNB, NEW ARRIVALS 등
+- BEM 방법론
+  - BEM 방법론을 사용하긴 했으나 잘못 사용했을지도...
 
-## 선택 요구사항
+## 💻 구현
 
-- [ ] `<header>`, `<section>` 등 시멘틱 태그를 최대한 활용해보세요.
-- [ ] 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- [ ] 부분적으로 BEM 방법론을 도입해보세요.
-- [ ] JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- [ ] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
-- [ ] SCSS 등의 CSS 전처리도구를 도입해보세요.
-- [ ] SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
+### 1. HEADER
 
-## 손쉬운 이미지 추출 방법
+<img scr="./image/implement1.png" width="100%" height = "auto">
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 [Image Downloader](https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj?hl=ko)를 사용하세요.
+- 크게 두 개로 나눠 구성
+- 상단에는 언어 변경 · SNS · Sub Menu로 구성, 하단에는 로고 · GNB · LNB · 검색 · 전체 메뉴로 구성
+- Flex를 이용해 LNB 구성, `max-height`와 `hover`를 이용해 슬라이드 애니메이션 구현
+- Popup 구현, X를 누르면 display를 none으로 줘서 닫음
 
-1. 원하는 사이트 접속
-1. Image Downloader 확장 프로그램 실행
-1. 다운로드 원하는 이미지 선택
-1. 서브 폴더 이름(Save to subfolder) 명시
-1. 다운로드!
+### 2. VISUAL
+
+<img scr="./image/implement2.png" width="100%" height = "auto">
+
+- 이미지 위에 글씨는 postion을 absolute로 줘서 배치
+
+### 3. ARRIVALS
+
+<img scr="./image/implement3.png" width="100%" height = "auto">
+
+- 위와 아래로 div로 나눠서 Flex를 이용해 구성
+- align-items를 flex-end와 flex-start로 줘서 배치
+
+### 4. PRODUCT
+
+<img scr="./image/implement4.png" width="100%" height = "auto">
+
+- 4개의 카테고리로 구성
+- Swiper를 이용해 슬라이드 시 item이 보이도록 구성
+- JS에서 classList를 사용해 class가 없는 div를 display:none
+
+### 5. VIDEO
+
+<img scr="./image/implement5.png" width="100%" height = "auto">
+
+- Scroll이 Video의 절반 정도 왔을 때 재생, 빠져 나갈 때 정지
+- video 태그와 ScrollMagic을 사용
+
+### 6. NEWS
+
+<img scr="./image/implement6.png" width="100%" height = "auto">
+
+- 3개의 영역으로 구성
+- Flex를 사용해 배치
+
+### 7. SUBDISIARY
+
+<img scr="./image/implement7.png" width="100%" height = "auto">
+
+- Flex를 사용해 배치
+- justify-content를 space-between으로 줘서 간격에 맞춰 정렬
+
+### 8. FOOTER
+
+<img scr="./image/implement8.png" width="100%" height = "auto">
+
+- 상단과 하단으로 나눠 구성
+- 하단에 있는 ComboBox는 header 섹션에 있는 언어 변경과 거의 동일
+- Select 태그 대신 ul, li 태그를 이용하여 만듦
+
+## ❌ 아쉬운 점
+
+- SCSS도 사용해 봤으면 좋았을 것 같다.
+- grid를 아예 사용하지 않았다.
+- NEWS 섹션에 있는 왼쪽 영역이 원본에선 크기가 줄면 정해진 크기로 바뀌면서 줄어드는데 css만으로 구성을 어떻게 해야 할지 몰라 구성하지 못했다.
+- SUBDISIARY 섹션에 있는 이미지에 마우스를 올리면 border가 바뀌는데 이때 이미지가 움직이는 현상이 있다. space-between을 썼기 때문인 것 같아서 이미지 안에 공간을 주고 중앙 배치를 시켜보려 했으나 안 돼서 시간상 포기했다.
+- 웹을 바로 내리면 동영상이 바로 시작이 안 되는 것 같다. 로딩이 있어 보이는 것 같아 이건 더 찾아봐야 할 것 같다.
+
+## 📖 이후
+
+- [ ] SCSS 공부
+- [ ] BEM 방법론
+- [ ] 반응형 웹
+- [ ] grid 공부
+- [ ] jQuery 공부
+- [ ] 이 후에는 스크롤 시 한 섹션씩 이동하는 웹 페이지를 만들어보고 싶다. ( fullPage 라이브러리 )

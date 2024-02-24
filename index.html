@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MONAMI</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="navigation">
+        <div class="navigation_top">
+          <div class="inner">
+            <div class="menuleft">
+              <div class="lang">
+                <div class="kor">
+                  <a>KOR</a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">ENG</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="sns">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)"><img src="./image/sns_facebook.gif" alt="페이스북" /></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"><img src="./image/sns_insta.gif" alt="인스타" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub_menu">
+              <ul class="menu">
+                <li><a href="javascript:void(0)">HOME</a></li>
+                <li><a href="javascript:void(0)">SITE MAP</a></li>
+                <li><a href="javascript:void(0)">CONTACT US</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="navigation_main">
+          <div class="inner">
+            <a href="/" class="logo"><img src="./image/logo.jpg" alt="monami_logo" /></a>
+            <div class="right_menu">
+              <a href="javascript:void(0)" class="search"><img src="./image/btn_search.gif" alt="검색" /></a>
+              <div class="all_menu_btn">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="main_menu on">
+              <ul>
+                <li class="main_menu__item">
+                  <a href="javascript:void(0)">모나미소개</a>
+                  <ul class="main_menu__contents">
+                    <li><a href="javascript:void(0)">CEO 메시지</a></li>
+                    <li><a href="javascript:void(0)">회사정보</a></li>
+                    <li><a href="javascript:void(0)">회사연혁</a></li>
+                    <li><a href="javascript:void(0)">윤리강령</a></li>
+                    <li><a href="javascript:void(0)">투자정보</a></li>
+                    <li><a href="javascript:void(0)">CI</a></li>
+                    <li><a href="javascript:void(0)">채용정보</a></li>
+                    <li><a href="javascript:void(0)">찾아오는 길</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="main_menu__item">
+                  <a href="javascript:void(0)">모나미제품</a>
+                  <ul class="main_menu__contents">
+                    <li><a href="javascript:void(0)">펜</a></li>
+                    <li><a href="javascript:void(0)">마카</a></li>
+                    <li><a href="javascript:void(0)">형광펜</a></li>
+                    <li><a href="javascript:void(0)">미술용</a></li>
+                    <li><a href="javascript:void(0)">기타</a></li>
+                    <li><a href="javascript:void(0)">카탈로그</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="main_menu__item">
+                  <a href="javascript:void(0)">NEWS & VIDEO</a>
+                  <ul class="main_menu__contents">
+                    <li><a href="javascript:void(0)">보도자료</a></li>
+                    <li><a href="javascript:void(0)">동영상자료</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="main_menu__item">
+                  <a href="javascript:void(0)">모나미 미술대회</a>
+                  <ul class="main_menu__contents">
+                    <li><a href="javascript:void(0)">미술대회 소개</a></li>
+                    <li><a href="javascript:void(0)">수상작 발표</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="main_menu__item">
+                  <a href="javascript:void(0)">고객지원</a>
+                  <ul class="main_menu__contents">
+                    <li><a href="javascript:void(0)">자주묻는질문</a></li>
+                    <li><a href="javascript:void(0)">문의하기</a></li>
+                    <li><a href="javascript:void(0)">이벤트</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="main_menu__item">
+                  <a href="javascript:void(0)">기업 구매 / 개발</a>
+                  <ul class="main_menu__contents">
+                    <li><a href="javascript:void(0)">대량 구매 문의</a></li>
+                    <li><a href="javascript:void(0)">기업 및 단체 구매</a></li>
+                    <li><a href="javascript:void(0)">산업용 맞춤 제품개발</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="all_menu">
+              <ul>
+                <li>
+                  <h2>모나미소개</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)">CEO 메시지</a></li>
+                    <li><a href="javascript:void(0)">회사정보</a></li>
+                    <li><a href="javascript:void(0)">회사연혁</a></li>
+                    <li><a href="javascript:void(0)">윤리강령</a></li>
+                    <li><a href="javascript:void(0)">투자정보</a></li>
+                    <li><a href="javascript:void(0)">CI</a></li>
+                    <li><a href="javascript:void(0)">채용정보</a></li>
+                    <li><a href="javascript:void(0)">찾아오는 길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>모나미제품</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)">펜</a></li>
+                    <li><a href="javascript:void(0)">마카</a></li>
+                    <li><a href="javascript:void(0)">형광펜</a></li>
+                    <li><a href="javascript:void(0)">미술용</a></li>
+                    <li><a href="javascript:void(0)">기타</a></li>
+                    <li><a href="javascript:void(0)">카탈로그</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>NEWS & VIDEO</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)">보도자료</a></li>
+                    <li><a href="javascript:void(0)">동영상자료</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>모나미 미술대회</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)">미술대회 소개</a></li>
+                    <li><a href="javascript:void(0)">수상작 발표</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>고객지원</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)">자주묻는질문</a></li>
+                    <li><a href="javascript:void(0)">문의하기</a></li>
+                    <li><a href="javascript:void(0)">이벤트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>기업 구매 / 개발</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)">대량 구매 문의</a></li>
+                    <li><a href="javascript:void(0)">기업 및 단체 구매</a></li>
+                    <li><a href="javascript:void(0)">산업용 맞춤 제품개발</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POPUP -->
+      <div class="popup">
+        <a href="javascipt:void(0)">
+          <img src="./image/l-popup__button.png" class="popup_image" alt="popup" />
+          <div class="popup_text">예약하기</div>
+        </a>
+        <img src="./image/l-popup__button--close.png" class="popup_close" alt="popup close" />
+      </div>
+    </header>
+    <!-- VISUAL -->
+    <section class="visual">
+      <div class="inner">
+        <div class="visual_text">
+          <h2>
+            어쩌면 삶은 <br />
+            인생이라는 종이 위에 <br />
+            써 내려가는 <br />
+            펜의 기록 같습니다.
+          </h2>
+          <p>그중에서도 지우고 싶지 않은 기록이 있습니다.<br />모나미는 언제나 당신의 행복한 기록과 함께 합니다.</p>
+        </div>
+      </div>
+    </section>
+    <!-- NEW ARRIVALS -->
+    <section class="arrivals">
+      <div class="inner">
+        <div class="arrivals_text">
+          <h2>
+            NEW<br />
+            ARRIVALS
+          </h2>
+          <p>가장 먼저 만나는 설레는 기다림</p>
+        </div>
+        <div class="arrivals_top">
+          <a href="javascript:void(0)" class="arrivals_item">
+            <img src="./image/arrivals1.jpg" alt="new arrivals1" />
+            <div class="arrivals_hover">
+              <p class="item__category">PEN</p>
+              <p class="item__name">PX ZETA C3</p>
+              <div class="arrivals_button">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="arrivals_item">
+            <img src="./image/arrivals2.jpg" alt="new arrivals2" />
+            <div class="arrivals_hover">
+              <p class="item__category">NOTE</p>
+              <p class="item__name">지퀀스</p>
+              <div class="arrivals_button">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="arrivals_bottom">
+          <a href="javascript:void(0)" class="arrivals_item">
+            <img src="./image/arrivals3.jpg" alt="new arrivals3" />
+            <div class="arrivals_hover">
+              <p class="item__category">SHARP</p>
+              <p class="item__name">제니스7샤프</p>
+              <div class="arrivals_button">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="arrivals_item">
+            <img src="./image/arrivals4.jpg" alt="new arrivals4" />
+            <div class="arrivals_hover">
+              <p class="item__category">FOUNTAIN PEN</p>
+              <p class="item__name">153 아이디 만년필</p>
+              <div class="arrivals_button">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="arrivals_item">
+            <img src="./image/arrivals5.jpg" alt="new arrivals5" />
+            <div class="arrivals_hover">
+              <p class="item__category">PREMIUM PEN</p>
+              <p class="item__name">153 리스펙트 리파인</p>
+              <div class="arrivals_button">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- BEST PRODUCT -->
+    <section class="product">
+      <div>
+        <h2>BEST PRODUCT</h2>
+        <p>언제 어디서나 생활 속에 함께하는 모나미</p>
+      </div>
+      <div class="pro_category">
+        <ul>
+          <li><a href="javascript:void(0)" class="pro_category__name on">펜</a></li>
+          <li><a href="javascript:void(0)" class="pro_category__name">마카</a></li>
+          <li><a href="javascript:void(0)" class="pro_category__name">형광펜</a></li>
+          <li><a href="javascript:void(0)" class="pro_category__name">미술용품</a></li>
+        </ul>
+      </div>
+      <div class="swiper on">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen01.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">프리미엄펜</div>
+                <div class="content__name">153 리스펙트 리파인</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen02.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">프리미엄펜</div>
+                <div class="content__name">153 아이디어 만년필</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen03.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">유성볼펜</div>
+                <div class="content__name">FX ZETA C3</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen04.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">유성볼펜</div>
+                <div class="content__name">제니스7</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen05.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">만년필</div>
+                <div class="content__name">153 네오 만년필 EF</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen06.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">FX 153</div>
+                <div class="content__name">FX 153</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen07.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">유성볼펜</div>
+                <div class="content__name">FX ZETA</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen08.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">프리미엄펜</div>
+                <div class="content__name">153 블랙 & 화이트</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen09.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">프리미엄펜</div>
+                <div class="content__name">153 골드</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen10.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">프리미엄펜</div>
+                <div class="content__name">153 아이디</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen11.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">프리미엄펜</div>
+                <div class="content__name">60주년 프러스펜 3000 데스크펜 스페셜 에디션</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen12.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">유성볼펜</div>
+                <div class="content__name">BP 153</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen13.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">FX700</div>
+                <div class="content__name">FX700</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen14.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">만년필</div>
+                <div class="content__name">모나미 병잉크</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen15.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">프리미엄펜</div>
+                <div class="content__name">153 아이디 샤프</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen16.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">프리미엄펜</div>
+                <div class="content__name">153 네오</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen17.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">프리미엄펜</div>
+                <div class="content__name">153 리스펙트</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_pen18.jpg" alt="pen1" />
+              <div class="content">
+                <div class="content__category">유성볼펜</div>
+                <div class="content__name">153 스틱</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker01.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">사인펜 슈퍼 파스텔 12색</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker02.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">프러스펜 3000 피그먼트</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker03.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">라이브 칼라(화이트 축)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker04.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">프러스펜 3000 60색 세트</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker05.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">워터 리얼 브러쉬</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker06.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">컬러 리얼 브러쉬</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker07.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">붓펜 12색 세트</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker08.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성펜</div>
+                <div class="content__name">컬러 트윈 브러쉬</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker09.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">생활마카</div>
+                <div class="content__name">세라믹마카 480 / 482</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker10.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">라이브 칼라 DIY</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker11.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">프러스펜 S / 리필심</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker12.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">프러스펜 3000</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker13.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">어데나</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker14.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">생활마카</div>
+                <div class="content__name">패브릭마카 470</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker15.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">사인펜 351</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker16.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">사인펜 슈퍼 12색</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker17.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">생활마카</div>
+                <div class="content__name">데코마카 463</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker18.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">생활마카</div>
+                <div class="content__name">데코마카 460</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker19.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">수성마카</div>
+                <div class="content__name">붓펜</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_maker20.jpg" alt="maker" />
+              <div class="content">
+                <div class="content__category">생활마카</div>
+                <div class="content__name">키친마카 420</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_highlight1.jpg" alt="highlight" />
+              <div class="content">
+                <div class="content__category">형광펜</div>
+                <div class="content__name">에센티 트윈</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_highlight2.jpg" alt="highlight" />
+              <div class="content">
+                <div class="content__category">형광펜</div>
+                <div class="content__name">에센티 브라이트 / 소프트</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_highlight3.jpg" alt="highlight" />
+              <div class="content">
+                <div class="content__category">형광펜</div>
+                <div class="content__name">에센티스틱 브라이트 / 소프트</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_highlight4.jpg" alt="highlight" />
+              <div class="content">
+                <div class="content__category">형광펜</div>
+                <div class="content__name">에딩 슈퍼 형광펜 600</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art01.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">크레파스</div>
+                <div class="content__name">크레파스_모니주(옐로우)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art02.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">크레파스</div>
+                <div class="content__name">크레파스_모니주(핑크)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art03.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">크레파스</div>
+                <div class="content__name">크레파스_모니주(블루)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art04.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">색연필</div>
+                <div class="content__name">종이말이 색연필_모니주(블루/핑크)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art05.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">연필</div>
+                <div class="content__name">연필_모니주(오렌지/핑크/퍼플)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art06.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">연필</div>
+                <div class="content__name">연필_모니주(그린/블루)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art07.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">샤프식 색연필</div>
+                <div class="content__name">샤프식 색연필_모니주(블루/핑크)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art08.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">사인펜</div>
+                <div class="content__name">모니주 사인펜(핑크/블루)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art09.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">그림물감</div>
+                <div class="content__name">그림물감_모니주(핑크)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art10.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">그림물감</div>
+                <div class="content__name">그림물감_모니주(블루)</div>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./image/product_art11.jpg" alt="art" />
+              <div class="content">
+                <div class="content__category">색연필</div>
+                <div class="content__name">바우하우스 색연필</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="line"></div>
+      <div class="scroll">
+        <img src="./image/p_arr1.gif" alt="" />
+        <img src="./image/p_arr2.gif" alt="" />
+        <div class="hand">
+          <img src="./image/p_cursor.gif" alt="" />
+          <p>DRAG & SCROLL</p>
+        </div>
+      </div>
+    </section>
+    <!-- VIDEO -->
+    <section class="video">
+      <video class="video_content" src="http://dfrkkcv2hg1jc.cloudfront.net/data/video/monami_brand_web_60.mp4" loop></video>
+    </section>
+    <!-- NEWS -->
+    <section class="news">
+      <div class="inner">
+        <div class="monaminews">
+          <div class="title">
+            <h2>MONAMI NEWS</h2>
+            <a href="javascript:void(0)">MORE</a>
+          </div>
+          <div class="news_main">
+            <img src="./image/news.jpg" alt="news" />
+            <div class="news_main__text">
+              <h2>모나미, 신학기 대전 진행</h2>
+              <p>모나미, 신학기 대전 진행… 최대 63% 할인- 2월 19일~25일 네이버 브랜드 스토어에서 신학기 이벤트 진행 - 프리..</p>
+              <span>2024-02-19</span>
+            </div>
+          </div>
+          <ul class="news_list">
+            <li>
+              <a href="javascript:void(0)">- 모나미, 공간의 가치를 높인 사무용품 브랜드 ‘LOBDA(롭다)’ 론칭</a>
+              <span>2024-02-14</span>
+            </li>
+            <li>
+              <a href="javascript:void(0)">- 모나미, 스타필드 수원에 모나미스토어 신규 오픈</a>
+              <span>2024-01-25</span>
+            </li>
+            <li>
+              <a href="javascript:void(0)">- 모나미 X 취(CHI), 한국의 잉크 ‘수묵’ 공간 협업 전시</a>
+              <span>2023-12-18</span>
+            </li>
+          </ul>
+        </div>
+        <div class="inquiry">
+          <img src="./image/inquiry_tit_bg.png" alt="inquiry" />
+          <div class="inquiry_text">
+            <h2>INQUIRY</h2>
+            <p>
+              언제나 소중한 의견에 귀 기울이겠습니다. <br />
+              궁금한 사항은 문의하세요.
+            </p>
+          </div>
+          <div class="inquiry_btn">
+            <a href="javascript:void(0)">INQUIRY NOW</a>
+          </div>
+        </div>
+        <div class="pattern"></div>
+      </div>
+    </section>
+    <!-- SUBDISIARY -->
+    <section class="subsidiary">
+      <div class="inner">
+        <div class="subsidiary_list">
+          <a href="javascript:void(0)"><img src="./image/fam_img1.jpg" alt="" /></a>
+        </div>
+        <div class="subsidiary_list">
+          <a href="javascript:void(0)"><img src="./image/fam_img2.jpg" alt="" /></a>
+        </div>
+        <div class="subsidiary_list">
+          <a href="javascript:void(0)"><img src="./image/fam_img3.jpg" alt="" /></a>
+        </div>
+        <div class="subsidiary_list">
+          <a href="javascript:void(0)"><img src="./image/fam_img4.jpg" alt="" /></a>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="inner">
+        <div class="footer_top">
+          <img src="./image/foot_logo.jpg" alt="" />
+          <ul class="info_top">
+            <li><a href="javascript:void(0)">회사소개</a></li>
+            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+            <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
+          </ul>
+        </div>
+        <div class="footer_bottom">
+          <div class="info_bot">
+            <h2>INFO</h2>
+            <ul>
+              <li>ADDRESS : 경기도 용인시 수지구 손곡로 17</li>
+              <li>TEL : 031-216-0153</li>
+              <li>FAX : 031-270-5154</li>
+            </ul>
+            <p>COPYRIGHT(C) 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED.</p>
+          </div>
+          <div class="center">
+            <h2>CUSTOMER CENTER</h2>
+            <p>080-022-0153</p>
+          </div>
+          <div class="site">
+            <h2 class="sitecate">FAMILY SITE</h2>
+            <ul class="sitelist">
+              <li><a href="javascript:void(0)">모나미몰</a></li>
+              <li><a href="javascript:void(0)">모나르떼</a></li>
+              <li><a href="javascript:void(0)">모나미 컨셉스토어</a></li>
+              <li><a href="javascript:void(0)">주식회사 항소</a></li>
+              <li><a href="javascript:void(0)">모나미 스테이션</a></li>
+              <li><a href="javascript:void(0)">모나미 미술대회</a></li>
+              <li><a href="javascript:void(0)">모나미 기업서비스</a></li>
+              <li><a href="javascript:void(0)">모나미코스메틱</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
