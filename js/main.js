@@ -1,25 +1,15 @@
 const langEl = document.querySelector(".lang");
 langEl.addEventListener("click", function () {
-  if (langEl.classList.contains("clicked")) {
-    langEl.classList.remove("clicked");
-  } else {
-    langEl.classList.add("clicked");
-  }
+  langEl.classList.toggle("clicked");
 });
 
 const menuEl = document.querySelector(".main_menu");
 const allbtnEl = document.querySelector(".all_menu_btn");
 const allEl = document.querySelector(".all_menu");
 allbtnEl.addEventListener("click", function () {
-  if (allbtnEl.classList.contains("on")) {
-    allbtnEl.classList.remove("on");
-    menuEl.classList.add("on");
-    allEl.style.display = "none";
-  } else {
-    allbtnEl.classList.add("on");
-    menuEl.classList.remove("on");
-    allEl.style.display = "block";
-  }
+  allbtnEl.classList.toggle("on");
+  menuEl.classList.toggle("on");
+  allEl.classList.toggle("on");
 });
 
 const popcloseEl = document.querySelector(".popup_close");
@@ -65,9 +55,5 @@ const scane = new ScrollMagic.Scene({
 const sitecateEl = document.querySelector(".sitecate");
 const sitelistEl = document.querySelector(".sitelist");
 sitecateEl.addEventListener("click", function () {
-  if (sitelistEl.classList.contains("clicked")) {
-    sitelistEl.classList.remove("clicked");
-  } else {
-    sitelistEl.classList.add("clicked");
-  }
+  sitelistEl.classList.toggle("clicked");
 });
